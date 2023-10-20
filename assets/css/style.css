@@ -1,0 +1,20 @@
+*{
+    width: 100%;
+    background-image:url();
+    background-repeat:no-repeat;
+    background-size: 100% 90%;
+    background-attachment: fixed;
+}
+
+
+.section1{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    
+}
+
+div .paquete_cuadro{
+    display: flex;
+    flex-direction: row;
+}
