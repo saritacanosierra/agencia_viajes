@@ -21,37 +21,26 @@
 // // <!-- definir variables -->
 
 
-// function register(){
-//     let ciudad= document.getElementById('ciudad')
-
-
-//  switch (paquetes) {
-//     case a:
-//         if( ciudad== mexico && personas>=3 && personas<=5){
-//             let total=personas*5000000;
-//         }
-// console.log('el valor a pagar por este paque tes de: '+total)
-        
-//         break;
  
-//     default:
-//         break;
-//  }
-
-while (repetir) {
-    opcion = Number (prompt ("Seleccione: \n1 - Registar\n2 - Salir"));
-    persona = {
-        nombre: prompt ("Ingrese su nobre"), edad: prompt ("Ingrese su edad:"),
-    };
-    personas.push (persona);
-    if (opcion == 2) {
-    repetir=false;
+function abrirVentana_a() {
+    let url = "/assets/mexico.html";
+    if (url) {
+      window.open(url, "_blank", "width=600,height=470");
     }
-}
+  }
+  function abrirVentana_b() {
+    let url = "/assets/brasil.html";
+    if (url) {
+      window.open(url, "_blank", "width=600,height=470");
+    }
+  }
+  function abrirVentana_c() {
+    let url = "/assets/amsterdam.html";
+    if (url) {
+      window.open(url, "_blank", "width=600,height=470");
+    }
+  }
 
-// } fin funtion onclick
-    
- 
-// <!-- leer datos -->
-// <!-- operaciones -->
-// <!-- imprimir --></body> */}
+
+
+

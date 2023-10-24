@@ -1,0 +1,67 @@
+*{background-image: url(/assets/img/hoja\ negra.jpg);
+    background-repeat: no-repeat;
+   
+    
+    
+    /* background-image:url();
+    background-repeat:no-repeat;
+    background-size: 100% 90%;
+    background-attachment: fixed; */
+}
+body{
+     display:flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content:center;
+}
+div.principal1{
+    display: flex;
+    width: 100vh;
+    border: solid;
+    text-align: center;
+    justify-content: space-around;
+    
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    margin-left: 35px;
+   
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color:#4735cf;
+    text-shadow: -3px 4px 6px rgba(0,0,0,.7);
+}
+
+.section1{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+
+    
+}
+button { 
+    padding: 10px; 
+    background: light-gray; 
+    color: black; 
+    border-radius: 30px;
+  } 
+  button:hover { 
+    padding: 15px; 
+    background: rgba(237, 125, 33, 0.885); 
+    color: white; 
+  } 
+  button:active { 
+    padding: 15px; 
+    background: gray; 
+    color: white; 
+  } 

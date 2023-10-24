@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>operaciones parcial 2</title>
+    
 </head>
 <!-- 1. Una agencia de viajes desea llevar un control de todos los servicios de turismo que ofrece. 
 La agencia presta servicios de reserva de paquetes turísticos, y ofrece 3 diferentes, de los 
@@ -26,50 +28,64 @@ de las personas que se han registrado -->
 
 <body>
     <header>
-        <img src="logo" alt="">
-        <h1> agencia de  viajes</h1>
+        <img  class="logo" src="./assets/img/logo.png" alt="">
+        <h1> agencia de  viajes  adventure</h1>
     </header>
-    <div>
-<section class="section1">
-   <form id="dates">
-    <label>¿cual es tu nombre?</label><br>
+   <section class="bannerInfo">
 
-    <input type="text" id="name" placeholder="nombre"><br>
-    <label>¿tu documento de identificación?</label><br>
-    <input type="number" id="doc" placeholder="numero de doc"><br>
-    <label>¿Tu telefono?</label><br>
-    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{6}" placeholder="telefono"><br>
-    <label>¿Cuál es tu edad?</label><br>
-    <input type="number" min="1" max="100" id="age" placeholder="Edad"><br>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./assets/img/mapa.jpeg" class="d-block w-100=" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/assets/img/mapa old.jpeg" class="d-block w-100" alt="...">
+          </div>
+         
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button >
+        <div class="data-container">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+  
+          <span class="btn">Hover Me </span>
+          </div>
+       
+      </div>
+    
 
-    <button  type="button" onclick="register()">Registrarse</button>
-   </form>
-</section>
+   </section>
 
-<section id="section2">
-
-<div class="paquete_cuadro" id="paquete1_cuadro">
-    <img src="" alt=""><br>
-    <p>paquete1</p><br>
-    <button type="button" id="btn1">seleccionar</button>
-</div>
-<div class="paquete_cuadro" id="paquete2_cuadro">
-    <img src="" alt=""><br>
-    <p>paquete1</p><br>
-    <button id="btn2">seleccionar</button>
-</div>
-<div class="paquete_cuadro" id="paquete3_cuadro">
-    <img src="" alt=""><br>
-    <p>paquete1</p><br>
-    <button id="btn3">seleccionar</button>
-</div>
-</section>
-</div>
+   
+     <section id="section2"> 
+        <div class="paquete_cuadro" id="paquete1_cuadro">
+            <img class="imgmexico" src="./assets/img/3.png" alt=""><br>
+            <p>Mexico</p><br><br>
+            <button type="button" id="mexico" onclick="abrirVentana_a()">seleccionar</button>
+        </div>
+            <div class="paquete_cuadro" id="paquete2_cuadro">
+                <img class="imgbrasil" src="./assets/img/2.png" alt=""><br>
+            <p>Brasil</p><br><br>
+            <button type="button" id="b" onclick="abrirVentana_b()">seleccionar</button>
+        </div>
+        <div class="paquete_cuadro" id="paquete3_cuadro">
+            <img class="imgamsterdam" src="./assets/img/1.png" alt=""><br>
+            <p>Amsterdam</p><br><br>
+            <button type="button" id="c" onclick="abrirVentana_c()">seleccionar</button>
+        </div>
+    </section>
+    </div>
 <footer>
 
     <p>&copy; Todos los derechos reservados | Agencia de Viajes</p>
 
 </footer>
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
