@@ -25,8 +25,7 @@ function registerBrasil() {
             
             if (age < 18) {
                 alert("edad no valida o No cumple con la mayoría de edad (debe ser mayor de 18 años) ");
-            }
-            
+            }   
         } else {
             document.getElementById('name').value = '';
             document.getElementById('doc').value = '';
@@ -35,8 +34,7 @@ function registerBrasil() {
             let valorPersona = 4500000;
             totalPagar += valorPersona;
             resultText += `Información ingresada: Nombre: ${name}, Documento: ${doc}, Teléfono: ${phone}, Edad: ${age}. valor a pagar por persona: $${valorPersona}.<br>`;
-            contPersonas++;
-            
+            contPersonas++;  
         }
     }
 

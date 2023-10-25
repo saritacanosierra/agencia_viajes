@@ -1,4 +1,4 @@
-*{
+*{background-color: #FFF7E1;
     width: 100%;
     
     /* background-image:url();
@@ -13,10 +13,15 @@ body{
     display:flex;
     flex-direction: column;
     margin: 50px;
+    margin-left: 50px;
     width: 200vh;
     justify-content: center;
     align-items: center;
     background-color: rgb(246, 238, 226);
+}
+
+h1{
+    font-family: Courier;
 }
 div.principal1{
     display: flex;
@@ -37,9 +42,6 @@ header h1{
     margin-top: 100px;
     
 }
-
-
-
 section#banerInfo{
     display: flex;
     width: 100%;
@@ -62,7 +64,6 @@ section#banerInfo{
   }
   
   .paquete_cuadro {
-    display: flex; 
     flex-direction: column;
     margin: 20px;
     padding: 10px;
@@ -76,57 +77,40 @@ section#banerInfo{
     align-items:center;
     justify-content: center;
 }
-body{
-    margin:0;
-    padding:0;
-  }
-  
-  .btn{
-  cursor:pointer;
-    position:relative;
-    padding:10px 20px;
-    background:white;
-    font-size:28px;
-    border-top-right-radius:10px;
-    border-bottom-left-radius:10px;
-    transition:all 1s;
-    &:after,&:before{
-      content:" ";
-      width:10px;
-      height:10px;
-      position:absolute;
-      border :0px solid #fff;
-      transition:all 1s;
-      }
-    &:after{
-      top:-1px;
-      left:-1px;
-      border-top:5px solid black;
-      border-left:5px solid black;
-    }
-    &:before{
-      bottom:-1px;
-      right:-1px;
-      border-bottom:5px solid black;
-      border-right:5px solid black;
-    }
-    &:hover{
-      border-top-right-radius:0px;
-    border-bottom-left-radius:0px;
-    background:rgba(0,0,0,.5);
-    color:white;
-    }
-&:before,&:after{
-    width:100%;
-    height:100%;
-    border-color:white;
-} 
-    
-  .data-container{
-    background:#ffebee;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
+p{
+    margin-top: 25px;
+    font-family: Courier;
 }
+  img .imgamsterdam{
+    margin-bottom: 30px;
+  }
+button { 
+    padding: 10px; 
+    background: light-gray; 
+    color: black; 
+    width: 200px;  
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius:30px; 
+    margin-bottom: 10px; 
+  } 
+  button:hover { 
+    padding: 15px; 
+    background: rgba(237, 125, 33, 0.885); 
+    color: white; 
+  } 
+  button:active { 
+    padding: 15px; 
+    background: gray; 
+    color: white; 
+  } 
+
+  button,p{
+    margin-top: 15px;
+    
+  }
+  footer, p{
+    display: flex;
+    justify-content: center;
+  }

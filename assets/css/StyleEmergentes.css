@@ -1,39 +1,43 @@
-*{background-image: url(/assets/img/hoja\ negra.jpg);
-    background-repeat: no-repeat;
-   
-    
-    
-    /* background-image:url();
+*{  background-image:url(/assets/img/fondo\ paquetes.jpeg);
     background-repeat:no-repeat;
-    background-size: 100% 90%;
-    background-attachment: fixed; */
+    background-size: 100% 100%;
+    background-attachment: fixed;   
 }
 body{
      display:flex;
     flex-direction: column;
     align-items: center; 
     justify-content:center;
+    z-index: 1;
 }
 div.principal1{
     display: flex;
     width: 100vh;
-    border: solid;
+    
     text-align: center;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around; 
 }
 form{
     display: flex;
+    margin-top: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:30px;
-    margin-left: 35px;
-   
-    
+    font-size: small;
+    z-index: 1;     
+    margin-bottom: 25px;
+    margin-left: 30px;
 }
 
+input {
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    border:solid;
+    color:black;
+  }
+ 
+  
 h1{
     display: flex;
     justify-content: center;
@@ -41,19 +45,17 @@ h1{
     color:#4735cf;
     text-shadow: -3px 4px 6px rgba(0,0,0,.7);
 }
-
 .section1{
     display: flex;
     width: 80%;
-    flex-direction: row;
-
-    
+    flex-direction: row;  
 }
 button { 
     padding: 10px; 
     background: light-gray; 
-    color: black; 
+    color: white; 
     border-radius: 30px;
+    width: 200px;
   } 
   button:hover { 
     padding: 15px; 
@@ -62,6 +64,6 @@ button {
   } 
   button:active { 
     padding: 15px; 
-    background: gray; 
+    background: white; 
     color: white; 
   } 
